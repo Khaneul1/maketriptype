@@ -12,7 +12,36 @@
     />
     <link rel="stylesheet" href="trip_type.css" />
   </head>
-  <body>
+  <body style="background-color: #f4f8fe">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" style="font-weight: bold"
+          >qwert</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mainpage.html">home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          data-bs-toggle="dropdown"
+          href="#"
+          role="button"
+          aria-expanded="false"
+          >Dropdown</a
+        >
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="checkList.html">Check List</a></li>
+          <li><a class="dropdown-item" href="#">Setting</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">My Page</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link login" href="login.html">Login</a>
+      </li>
+    </ul>
     <div class="Box">
       <div class="container-box">
         <p class="page-title">choice</p>
@@ -21,9 +50,11 @@
           <div class="button-row">
             <div class="button-group">
               <span class="option-number">01</span>
-              <button class="btn" id="domestic" data-group="1">국내여행</button>
+              <button class="btn" data-group="1" data-type="domestic">
+                국내여행
+              </button>
               <span class="option-div">vs</span>
-              <button class="btn" id="international" data-group="1">
+              <button class="btn" data-group="1" data-type="international">
                 해외여행
               </button>
             </div>
@@ -31,19 +62,19 @@
           <div class="button-row">
             <div class="button-group">
               <span class="option-number">02</span>
-              <button class="btn" id="shortTerm" data-group="2">
+              <button class="btn" data-group="2" data-type="short">
                 단기여행
               </button>
               <span class="option-div">vs</span>
-              <button class="btn" id="longTerm" data-group="2">장기여행</button>
+              <button class="btn" data-group="2" data-type="long">
+                장기여행
+              </button>
             </div>
           </div>
         </div>
         <p class="info-text">*선택에 따라 체크리스트 구성이 달라집니다.</p>
         <div class="nextBtn">
-          <button class="next-button" id="next-button">
-            <font color="white">다음</font>
-          </button>
+          <button class="next-button">다음</button>
         </div>
       </div>
     </div>
